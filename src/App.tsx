@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import logo from './logo.png';
 import './App.css';
+import style from './App.scss';
+window.test = style;
+console.log(window.test);
 
 interface AppProps {}
 

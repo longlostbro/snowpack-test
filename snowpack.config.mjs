@@ -5,6 +5,12 @@ export default {
     src: { url: '/dist' },
   },
   plugins: [
+    [
+      "@snowpack/plugin-babel",
+      {
+        "input": ['.js', '.mjs', '.jsx', '.ts', '.tsx'], // (optional) specify files for Babel to transform
+      }
+    ],
     'snowpack-plugin-inliner',
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
